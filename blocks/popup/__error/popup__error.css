@@ -1,0 +1,15 @@
+label {
+    position: relative;
+    display: flex;
+    margin-bottom: 24px;
+  }
+  
+  .popup__error {
+    position: absolute;
+    top: 51px;
+  
+    color: red;
+  
+    font-size: 12px;
+    line-height: 14px;
+  }

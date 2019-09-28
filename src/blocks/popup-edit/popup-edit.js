@@ -1,4 +1,6 @@
 import { Popup } from "../popup/popup";
+import { api } from "../../index";
+import { btnInactive } from "../../index";
 
 class ProfileEditPopup extends Popup {
   constructor(popupElement, closeButton) {

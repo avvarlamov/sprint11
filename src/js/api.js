@@ -15,17 +15,33 @@ class Api {
   getInitialCards() {
     return fetch(`${this.url}/cards`, {
       headers: this.headers
-    }).then(res => {
-      return this.getResponse(res);
-    });
+    })
+      .then(res => {
+        if (res.ok) {
+          return Promise.resolve(res.json());
+        }
+        return Promise.reject(`Ошибка: ${res.status}`);
+      })
+
+      .catch(err => {
+        console.log(err);
+      });
   }
 
   getUserName() {
     return fetch(`${this.url}/users/me`, {
       headers: this.headers
-    }).then(res => {
-      return this.getResponse(res);
-    });
+    })
+      .then(res => {
+        if (res.ok) {
+          return Promise.resolve(res.json());
+        }
+        return Promise.reject(`Ошибка: ${res.status}`);
+      })
+
+      .catch(err => {
+        console.log(err);
+      });
   }
 
   patchUserName(nameValue, linkValue) {
@@ -36,9 +52,17 @@ class Api {
         name: nameValue,
         about: linkValue
       })
-    }).then(res => {
-      return this.getResponse(res);
-    });
+    })
+      .then(res => {
+        if (res.ok) {
+          return Promise.resolve(res.json());
+        }
+        return Promise.reject(`Ошибка: ${res.status}`);
+      })
+
+      .catch(err => {
+        console.log(err);
+      });
   }
 }
 export { Api };

@@ -1,4 +1,5 @@
 import { Popup } from "../blocks/popup/popup";
+import { btnInactive } from "../index";
 
 class AddCardPopup extends Popup {
   constructor(popupElement, closeButton) {

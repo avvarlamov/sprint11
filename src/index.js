@@ -67,13 +67,13 @@ document.forms.editForm.addEventListener("submit", function() {
 
 // Активная/неактивная кнопка для форм
 
-const btnActive = btn => {
+export const btnActive = btn => {
   btn.style.backgroundColor = "#000000";
   btn.style.color = "#ffffff";
   btn.disabled = false;
   btn.style.cursor = "pointer";
 };
-const btnInactive = btn => {
+export const btnInactive = btn => {
   btn.style.backgroundColor = "#ffffff";
   btn.style.color = "rgba(0, 0, 0, 0.2)";
   btn.disabled = true;

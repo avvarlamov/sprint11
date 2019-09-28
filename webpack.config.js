@@ -43,7 +43,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.css$/i, // применять это правило только к CSS-файлам
+        test: /\.css$/i,
         use: [
           isDev ? "style-loader" : MiniCssExtractPlugin.loader,
           {
@@ -51,7 +51,7 @@ module.exports = {
             options: { importLoaders: 1 }
           },
           "postcss-loader"
-        ] // к этим файлам нужно применить эти пакеты
+        ]
       }
     ]
   },

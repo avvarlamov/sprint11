@@ -35,7 +35,7 @@
   "scripts": {
     "build": "NODE_ENV=production rimraf dist && webpack --mode production",
     "dev": "NODE_ENV=development webpack-dev-server --mode development --open --watch",
-    "deploy": "NODE_ENV=production gh-pages -d dist --git"
+    "deploy": "NODE_ENV=production gh-pages -d dist"
   },
   "author": "Andrey Varlamov",
   "license": "ISC"

@@ -12,7 +12,7 @@ const serverUrl =
     : "https://praktikum.tk/cohort2";
 
 // Объявление переменных
-const root = document.querySelector(".root");
+export const root = document.querySelector(".root");
 const placesList = root.querySelector(".places-list");
 const addButton = root.querySelector(".user-info__button");
 const editButton = root.querySelector(".user-info__edit-button");

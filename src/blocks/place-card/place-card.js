@@ -1,3 +1,5 @@
+import { root } from "../../index";
+
 class Card {
   constructor(name, link) {
     this.cardElement = this.create(name, link);

@@ -104,9 +104,9 @@ class Card {
       background-size: contain;
       `
       );
-
+      let close = require("../../images/close.svg");
       const closeImage = document.createElement("img");
-      closeImage.setAttribute("src", `./images/close.svg`);
+      closeImage.setAttribute("src", close);
       closeImage.setAttribute(
         "style",
         `
